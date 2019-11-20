@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_android_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_depositmoney"
+            android:icon="@drawable/ic_menu_borrowloan"
+            android:title="@string/menu_depositmoney" />
+        <item
+            android:id="@+id/nav_borrowloan"
+            android:icon="@android:drawable/ic_menu_directions"
+            android:title="@string/menu_borrowloan" />
+        <item
+            android:id="@+id/nav_payloan"
+            android:icon="@drawable/ic_menu_payloan"
+            android:title="@string/menu_payloan" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_notifications"
+                android:icon="@android:drawable/ic_popup_reminder"
+                android:title="@string/menu_notifications" />
+
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+    </group>
+</menu>
