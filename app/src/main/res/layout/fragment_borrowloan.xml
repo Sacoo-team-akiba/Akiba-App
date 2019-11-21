@@ -5,75 +5,95 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="24sp"
-        android:gravity="center"
-        android:text="Maximum borrow amount is 500000"
-        android:textColor="#FF0000"
-        android:textSize="24sp" />
-
-    <com.google.android.material.textfield.TextInputEditText
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="24sp"
-        android:gravity="center"
-        android:hint="Enter amount to borrow"
-        android:textSize="24sp" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="24sp"
-        android:gravity="center"
-        android:text="Select your payment period"
-        android:textColor="#000000"
-        android:textSize="30sp" />
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tablayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15sp">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Days" />
+            android:orientation="vertical" >
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Weeks" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24sp"
+                android:gravity="center"
+                android:text="Maximum borrow amount is 500000"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Months" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24sp"
+                android:gravity="center"
+                android:hint="Enter amount to borrow"
+                android:inputType="number"
+                android:textSize="18sp" />
 
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabItem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Years" />
-    </com.google.android.material.tabs.TabLayout>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24sp"
+                android:layout_marginRight="24sp"
+                android:layout_marginBottom="0sp"
+                android:gravity="center"
+                android:text="Select your payment period"
+                android:textColor="#000000"
+                android:textSize="24sp" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="29dp">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="0sp"
+                android:layout_marginRight="15sp"
+                android:layout_marginBottom="0sp">
 
-    </FrameLayout>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Days" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="35sp"
-        android:text="ADD GURANTERS"
-        android:textColor="#046924"
-        android:textSize="20sp" />
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weeks" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Months" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tabItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Years" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <NumberPicker
+                android:id="@+id/numberPicker1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="100sp"
+                android:layout_marginRight="100sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="35sp"
+                android:text="ADD GURANTERS"
+                android:textColor="#046924"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
