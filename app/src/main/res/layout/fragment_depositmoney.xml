@@ -22,6 +22,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Enter your name"
+                android:background="@drawable/rounded_border_edittext"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -32,6 +33,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Enter your receipt ID"
+                android:background="@drawable/rounded_border_edittext"
                 android:inputType="number|textPersonName" />
 
             <TextView
@@ -59,6 +61,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Enter Amount"
+                android:background="@drawable/rounded_border_edittext"
                 android:inputType="number|textPersonName" />
 
             <EditText
@@ -69,6 +72,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Enter payment branch"
+                android:background="@drawable/rounded_border_edittext"
                 android:inputType="textPersonName" />
 
             <Button

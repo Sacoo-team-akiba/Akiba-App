@@ -25,6 +25,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Enter your names"
+                android:background="@drawable/rounded_border_edittext"
                 android:inputType="textPersonName" />
 
             <TextView
@@ -45,6 +46,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Enter amount to pay"
+                android:background="@drawable/rounded_border_edittext"
                 android:inputType="number|textPersonName" />
 
             <TextView
@@ -58,11 +60,12 @@
                 android:textSize="24sp" />
 
             <RadioGroup
-                android:layout_width="match_parent"
+                android:layout_width="236dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="70sp"
                 android:layout_marginRight="70sp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="30sp">
 
                 <RadioButton
                     android:id="@+id/radio_"

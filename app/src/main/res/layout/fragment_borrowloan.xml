@@ -30,6 +30,7 @@
                 android:layout_margin="24sp"
                 android:gravity="center"
                 android:hint="Enter amount to borrow"
+                android:background="@drawable/rounded_border_edittext"
                 android:inputType="number"
                 android:textSize="18sp" />
 
@@ -91,6 +92,15 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="35sp"
                 android:text="ADD GURANTERS"
+                android:textColor="#046924"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="35sp"
+                android:text="Submit"
                 android:textColor="#046924"
                 android:textSize="14sp" />
         </LinearLayout>
